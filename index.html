@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS HTML CSS AND GIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            clear: both;
+            box-sizing: border-box;
+            color: #444444;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #2980b9;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 2.7rem;
+            color: #3e75ad;
+        }
+
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #4265a7;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+        
+        .wrapper {
+            background-color: #ecf0f1;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 5rem;
+            display: flex;
+            width: 100%;
+        }
+
+        nav {
+            padding-left: 10rem;
+            width: 50%;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .avatar {
+            margin-bottom: 2rem;
+            max-width: 20rem;
+            max-height: 20rem;
+            border-radius: 50%;
+        }
+
+        .odd {
+            border-top: 0.5rem solid #fff;
+            border-bottom: 0.5rem solid #fff;
+            background-color: #dddddd;
+        }
+
+        a {
+            font-size: 1.8rem;
+            color: #fff;
+            text-decoration: none;
+            background-color: #2980b9;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            transition: all .2s;
+        }
+
+        a:hover {
+            background-color: #20628f;
+        }
+
+        ol {
+            margin-left: 2rem;
+        }
+
+        .contact {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 760px) {
+            header {
+                flex-direction: column;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            nav {
+                padding-left: 0;
+                padding-bottom: 1rem;
+                width: 100%;
+            }
+
+            .info {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <h1>Content</h1>
+                <ul>
+                    <li>Full Name</li>
+                    <li>Contact Info</li>
+                    <li>Summary</li>
+                    <li>Skills</li>
+                    <li>Code examples</li>
+                    <li>Experience</li>
+                    <li>Education</li>
+                    <li>English level</li>
+                </ul>
+            </nav>
+            <div class="info">
+                <img class="avatar" src="./image.jpeg" alt="avatar">
+                <h3>Chemeza Alexander Leonidovich</h3>
+            </div>
+        </header>
+
+        <main>
+            <section class="odd">
+                <h2>Full name</h2>
+                <p>Chemeza Alexander Leonidovich</p>
+            </section>
+            <section>
+                <h2>Contact Info</h2>
+                <h3>Phone number</h3>
+                <a class="contact" href="#">+375295176175</a>
+                <h3>Email</h3>
+                <a class="contact" href="#">alexander.chemeza@gmail.com</a>
+            </section>
+            <section class="odd">
+                <h2>Summary</h2>
+                <p>My goal is to become a programmer in Web field. I wish to create beautiful and multi functional web applications. I'm open to new knowledges and not scared of working hard.</p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Sass</li>
+                    <li>Bootstrap</li>
+                    <li>jQuery</li>
+                    <li>Git</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>Gulp</li>
+                    <li>Node JS</li>
+                </ul>
+            </section>
+            <section class="odd">
+                <h2>Code examples</h2>
+                <p>You can find my code examples <a href="https://codepen.io/dashboard?type=VIEW&opts_itemType=PEN&opts_searchTerm=null&opts_order=RELEVANCE&opts_depth=EVERYTHING&opts_showForks=true&opts_filter=all&opts_orderBy=ID&opts_orderDirection=0&opts_tag=null&displayType=GRID&previewType=IFRAME&activeType=PEN">here</a></p>
+            </section>
+            <section>
+                <h2>Experience</h2>
+                <p>No experience</p>
+            </section>
+            <section class="odd">
+                <h2>Education</h2>
+                <ol>
+                    <li>Basic Course of HTML CSS and JavaScript</li>
+                    <li>Course Web Applications Development using JavaScript</li>
+                    <li>Courses on Udemy</li>
+                </ol>
+            </section>
+            <section>
+                <h2>English level</h2>
+                <p>I was a student of Academy of Postgraduate Education. A have a diploma of a translator.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
